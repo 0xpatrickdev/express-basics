@@ -1,0 +1,19 @@
+{
+  "name": "express-basics",
+  "version": "1.0.0",
+  "description": "simple app powered by express.js running on node.js. created in a team treehouse tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcooney10/express-basics.git"
+  },
+  "author": "Patrick Cooney / Team Treehouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pcooney10/express-basics/issues"
+  },
+  "homepage": "https://github.com/pcooney10/express-basics#readme"
+}
