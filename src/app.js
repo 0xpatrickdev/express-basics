@@ -5,6 +5,8 @@ var posts = require('./mock/posts.json');
 
 var app = express();
 
+app.use('/static', express.static(__dirname + '/public')) //app.use() --> defines middleware for app (acts in between client req and route rendering)
+
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/templates');
 
@@ -15,11 +17,11 @@ app.get('/', function(req, res) {
 app.get('/blog/:title?', function(req, res) {
 	var title = req.params.title;
 	if (title === undefined) {
-			res.status(503);
-			res.send("This page is under construction. My b.");
-	}	else {
-			var post = posts[title] || {};
-			res.render('post', { post: post});
+		res.status(503);
+		res.send("This page is under construction. My b.");
+	} else {
+		var post = posts[title] || {};
+		res.render('post', { post: post});
 	}
 });
 
