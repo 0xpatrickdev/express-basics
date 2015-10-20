@@ -2,7 +2,7 @@
 
 simple app powered by express.js running on node.js. created in a team treehouse tutorial
 
-In this exercise, we are covering:
+In this exercise, I learned about:
 * Installing and Setting up Express
 * Advanced Debugging Strategies for Node.js apps
 * Routing in Express
