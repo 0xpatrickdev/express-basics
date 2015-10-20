@@ -3,6 +3,8 @@
 var express = require('express');
 var posts = require('./mock/posts.json');
 
+var port = process.env.PORT || 3000;
+
 var postsLists = Object.keys(posts).map(function(value) {
 	return posts[value]
 });
@@ -34,6 +36,6 @@ app.get('/blog/:title?', function(req, res) {
 	}
 });
 
-app.listen(3000, function(){
+app.listen(port, function(){
 	console.log("The frontend server is running on port 3000!") // can have an express server running an api or admin view
 });
