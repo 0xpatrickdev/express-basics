@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pcooney10/express-basics/issues"
   },
-  "homepage": "https://github.com/pcooney10/express-basics#readme"
+  "homepage": "https://github.com/pcooney10/express-basics#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
