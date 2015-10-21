@@ -36,6 +36,14 @@ app.get('/blog/:title?', function(req, res) {
 	}
 });
 
+app.get('/posts', function(req, res) { //external API
+	if (req.query.raw) { // if theres "?raw=true" in the url
+		res.json(posts);
+	} else {
+		res.json(postsLists); //same as response.send, but turns null and undefined values into json
+	}
+});
+
 app.listen(port, function(){
 	console.log("The frontend server is running on port 3000!") // can have an express server running an api or admin view
 });
